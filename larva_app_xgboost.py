@@ -37,7 +37,7 @@ features_info = [
 
 inputs = []
 
-st.subheader("Please enter your larva's features (if there's missing values, select NaN):")
+st.subheader("Please enter your larva's features (if there're missing values, select NaN):")
 
 for label, step, fmt in features_info:
     # Adjust ratios between elements
@@ -68,3 +68,4 @@ if st.button("Predict!"):
 
         except Exception as e:
             st.error(f"Prediction Failed! Please check your input again!: {e}")
+
